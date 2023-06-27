@@ -25,7 +25,6 @@ export default function Sidemenu() {
       checked: aaa,
     };
     temparray[index1] = b;
-    console.log(temparray, currentArray, b, aaa);
     setCurrentArray(temparray);
   };
 
@@ -74,7 +73,6 @@ export default function Sidemenu() {
                     };
                     newArray[index1] = a;
                     setCurrentArray(newArray);
-                    //setAccordianState(!accordianState);
                   }}
                 >
                   {item.label}
@@ -208,6 +206,7 @@ export default function Sidemenu() {
                                         index3
                                       ] = array;
                                       testing(child, index1, index2);
+                                      testing2(item, index1);
                                       setCurrentArray(newArray);
                                     }}
                                   />
